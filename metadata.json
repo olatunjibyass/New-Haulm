@@ -1,0 +1,6 @@
+{
+  "name": "Haulm Transport",
+  "description": "Dump Truck Hauling & Bulk Material Transportation Services in Ontario",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
