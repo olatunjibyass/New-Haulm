@@ -171,7 +171,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
-                <span>24/7 Dispatch Hotline | Office Mon-Fri 6AM-6PM</span>
+                <span>24Hr Dispatch Hotline | Office Mon-Fri 6AM-6PM</span>
               </div>
             </div>
           </div>

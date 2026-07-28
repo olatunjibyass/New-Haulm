@@ -6,17 +6,17 @@ export const COMPANY_INFO = {
   phone: '+1 (902) 201-5062',
   localPhone: '(902) 201-5062',
   dispatchPhone: '+1 (902) 201-5062',
-  email: 'dispatch@haulmtransport.ca',
-  quoteEmail: 'quotes@haulmtransport.ca',
+  email: 'haulmtransport@hotmail.com',
+  quoteEmail: 'haulmtransport@hotmail.com',
   address: '71 Simmonds Rd, North Preston, NS B2Z 1A3',
   serviceArea: 'Halifax Regional Municipality (HRM), Dartmouth, Bedford, Sackville, Truro, Eastern Shore, Cape Breton & across Nova Scotia',
-  hours: '24/7 Operations & Dispatch Hotline | Office: Mon-Fri 6:00 AM - 6:00 PM',
+  hours: '24Hr Operations & Dispatch Hotline | Office: Mon-Fri 6:00 AM - 6:00 PM',
   cvor: 'NS Safety Certified # NS-984210',
   wsib: 'WCB Nova Scotia Insured & NSTIR Compliant ($10M Commercial Liability)',
 };
 
 export const KEY_STATS = [
-  { value: '24/7', label: 'Availability', subtext: 'Round-the-clock dispatch & emergency hauling support' },
+  { value: '24Hr', label: 'Availability', subtext: 'Round-the-clock dispatch & emergency hauling support' },
   { value: '100%', label: 'Licensed & Insured', subtext: 'Full NS Carrier Safety compliance, NSTIR permits & $10M liability' },
   { value: '15+ Yrs', label: 'Experienced Operators', subtext: 'Certified drivers with safety-first records across NS' },
   { value: '12,500+', label: 'Loads Delivered', subtext: 'On-time haulage for commercial, municipal & civil projects' },
@@ -68,7 +68,7 @@ export const SERVICES: Service[] = [
       { label: 'Recycling Rate', value: '90%+ diverted to crushing plants' },
       { label: 'Dump Body Type', value: 'Hardox 450 Steel High-Impact Bodies' },
       { label: 'Environmental Clearance', value: 'NS Environment Manifest Compliance' },
-      { label: 'Emergency Haulage', value: '24/7 Rapid Response Dispatch' }
+      { label: 'Emergency Haulage', value: '24Hr Rapid Response Dispatch' }
     ]
   },
   {
@@ -224,7 +224,7 @@ export const INDUSTRIES: Industry[] = [
     name: 'Municipal & Infrastructure Projects',
     icon: 'Landmark',
     overview: 'Vetted transportation support for municipal public works, watermain replacements, bridge rehabs, and NSTIR highway maintenance.',
-    keyBenefits: ['Strict compliance with NSTIR specifications', 'Security-cleared drivers', 'Comprehensive safety documentation', '24/7 winter emergency response'],
+    keyBenefits: ['Strict compliance with NSTIR specifications', 'Security-cleared drivers', 'Comprehensive safety documentation', '24Hr winter emergency response'],
     typicalProjects: ['Watermain Repair Excavation', 'Municipal Snow Relocation', 'Bridge Abutment Backfill'],
     image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80'
   },
@@ -385,7 +385,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-2',
     category: 'dispatch',
     question: 'What is the minimum notice required to book a dump truck?',
-    answer: 'While we recommend booking 24 to 48 hours in advance for large fleet commitments, our 24/7 emergency dispatch hotline can often provide same-day or next-morning truck allocations across Halifax Regional Municipality (HRM), Dartmouth, Bedford, and surrounding regions.'
+    answer: 'While we recommend booking 24 to 48 hours in advance for large fleet commitments, our 24Hr emergency dispatch hotline can often provide same-day or next-morning truck allocations across Halifax Regional Municipality (HRM), Dartmouth, Bedford, and surrounding regions.'
   },
   {
     id: 'faq-3',

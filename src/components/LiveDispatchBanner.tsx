@@ -10,7 +10,7 @@ export const LiveDispatchBanner: React.FC = () => {
     '🚛 FLEET ALERT: Aggregate hauling available for Halifax, Dartmouth & Sackville same-day delivery',
     '🛡️ SAFETY CERTIFIED: 100% NSTIR Compliant & NS Safety Rated Fleet | WCB Insured Drivers',
     '🏗️ QUARRY SHUTTLE: Continuous Granular A/B supply running from HRM Quarry Yards',
-    `📞 24/7 DISPATCH LINE: Call ${COMPANY_INFO.phone} for immediate truck allocation`
+    `📞 24Hr DISPATCH LINE: Call ${COMPANY_INFO.phone} for immediate truck allocation`
   ];
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export const LiveDispatchBanner: React.FC = () => {
             className="flex items-center gap-1.5 text-[#10B981] hover:text-[#059669] transition-colors font-black"
           >
             <Phone className="w-3.5 h-3.5 text-[#10B981]" />
-            24/7 Hotline: {COMPANY_INFO.phone}
+            24Hr Hotline: {COMPANY_INFO.phone}
           </a>
         </div>
       </div>

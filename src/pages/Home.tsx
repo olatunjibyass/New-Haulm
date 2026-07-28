@@ -30,10 +30,10 @@ interface HomeProps {
 
 export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) => {
   return (
-    <div className="space-y-20 pb-16">
+    <div className="space-y-8 pb-8">
       
       {/* HERO SECTION */}
-      <section className="relative min-h-[80vh] flex items-center bg-[#0B132B] overflow-hidden border-b border-white/10">
+      <section className="relative min-h-[42vh] sm:min-h-[46vh] flex items-center bg-[#0B132B] overflow-hidden border-b border-white/10">
         
         {/* Grid Decorative Background */}
         <div className="absolute inset-0 opacity-10 pointer-events-none grid-bg-pattern"></div>
@@ -51,56 +51,56 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-          <div className="max-w-3xl space-y-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 w-full">
+          <div className="max-w-3xl space-y-3">
             
             {/* Trust Badge */}
-            <div className="inline-block px-3.5 py-1.5 bg-[#10B981]/20 text-[#10B981] text-[10px] font-black uppercase tracking-[0.3em] border border-[#10B981]/30">
+            <div className="inline-block px-2.5 py-1 bg-[#10B981]/20 text-[#10B981] text-[10px] font-black uppercase tracking-[0.25em] border border-[#10B981]/30">
               NOVA SCOTIA'S PREMIER DUMP TRUCK & AGGREGATE HAULER
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-6xl font-black text-white leading-[0.98] tracking-tighter uppercase">
-              Reliable <span className="text-[#10B981]">Dump Truck</span><br/>Hauling Services
+            <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight tracking-tight uppercase">
+              Reliable <span className="text-[#10B981]">Dump Truck</span> Hauling Services
             </h1>
 
             {/* Subheadline */}
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-2xl font-normal">
               We safely transport aggregates, soil, demolition materials, and bulk construction products with dependable service, competitive pricing, and experienced operators.
             </p>
 
             {/* Action Buttons */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <a
                 href={`tel:${COMPANY_INFO.phone.replace(/[^0-9]/g, '')}`}
-                className="px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-black font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10B981]/25 transition-all hover:scale-105 flex items-center justify-center gap-3"
+                className="px-5 py-2.5 bg-[#10B981] hover:bg-[#059669] text-black font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10B981]/25 transition-all hover:scale-105 flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5 text-black" />
+                <Phone className="w-4 h-4 text-black" />
                 <span>Call to Request a Quote</span>
-                <ArrowRight className="w-4 h-4 text-black" />
+                <ArrowRight className="w-3.5 h-3.5 text-black" />
               </a>
 
               <a
                 href={`tel:${COMPANY_INFO.phone.replace(/[^0-9]/g, '')}`}
-                className="px-8 py-4 border border-[#10B981]/30 bg-[#10B981]/10 hover:bg-[#10B981]/20 text-white font-black text-xs uppercase tracking-widest shadow-lg flex items-center justify-center gap-3 transition-colors"
+                className="px-5 py-2.5 border border-[#10B981]/30 bg-[#10B981]/10 hover:bg-[#10B981]/20 text-white font-black text-xs uppercase tracking-widest shadow-lg flex items-center justify-center gap-2 transition-colors"
               >
-                <Phone className="w-5 h-5 text-[#10B981]" />
+                <Phone className="w-4 h-4 text-[#10B981]" />
                 <span>Call Now: {COMPANY_INFO.phone}</span>
               </a>
             </div>
 
             {/* Quick Feature Highlights */}
-            <div className="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-white/10 text-xs text-gray-300 font-semibold uppercase tracking-wider">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0" />
+            <div className="pt-3 grid grid-cols-2 sm:grid-cols-3 gap-2 border-t border-white/10 text-[11px] text-gray-300 font-semibold uppercase tracking-wider">
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981] shrink-0" />
                 <span>NSTIR Safety Licensed</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0" />
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981] shrink-0" />
                 <span>Same-Day Dispatch</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0" />
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981] shrink-0" />
                 <span>NS Environment Compliant</span>
               </div>
             </div>
@@ -111,19 +111,19 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
 
       {/* KEY STATISTICS SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {KEY_STATS.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#1C2541] border border-white/10 p-6 shadow-2xl relative overflow-hidden group hover:border-[#10B981]/50 transition-colors"
+              className="bg-[#1C2541] border border-white/10 p-3.5 shadow-xl relative overflow-hidden group hover:border-[#10B981]/50 transition-colors"
             >
-              <div className="text-3xl sm:text-4xl font-black text-[#10B981] font-mono tracking-tighter">
+              <div className="text-2xl sm:text-3xl font-black text-[#10B981] font-mono tracking-tight">
                 {stat.value}
               </div>
-              <h3 className="text-xs font-black text-white uppercase tracking-widest mt-1">
+              <h3 className="text-[11px] font-black text-white uppercase tracking-wider mt-0.5">
                 {stat.label}
               </h3>
-              <p className="text-[11px] text-gray-300 mt-1 leading-normal">
+              <p className="text-[10px] text-gray-300 mt-0.5 leading-snug">
                 {stat.subtext}
               </p>
             </div>
@@ -132,40 +132,37 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
-          <div className="space-y-2">
-            <span className="text-[#10B981] font-black text-xs uppercase tracking-[0.2em] flex items-center gap-1.5">
-              <Truck className="w-4 h-4 text-[#10B981]" />
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b border-white/10 pb-3">
+          <div className="space-y-1">
+            <span className="text-[#10B981] font-black text-[11px] uppercase tracking-[0.2em] flex items-center gap-1.5">
+              <Truck className="w-3.5 h-3.5 text-[#10B981]" />
               WHAT WE TRANSPORT & HAUL
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
               Dump Truck & Bulk Material Services
             </h2>
-            <p className="text-gray-300 text-sm max-w-2xl">
-              Specialized dump truck solutions designed for construction sites, civil earthworks, road building, and commercial landscaping across Nova Scotia.
-            </p>
           </div>
 
           <button
             onClick={() => setCurrentPage('services')}
-            className="px-5 py-2.5 bg-white/5 hover:bg-white/10 text-[#10B981] font-bold text-xs uppercase tracking-widest border border-white/10 flex items-center gap-2 shrink-0 self-start md:self-auto transition-colors"
+            className="px-4 py-1.5 bg-white/5 hover:bg-white/10 text-[#10B981] font-bold text-xs uppercase tracking-widest border border-white/10 flex items-center gap-1.5 shrink-0 self-start md:self-auto transition-colors"
           >
             <span>Explore All Services</span>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {SERVICES.slice(0, 4).map((service, index) => (
             <div
               key={service.id}
-              className="bg-[#1C2541] border border-white/10 overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-[#10B981]/50 transition-all hover:-translate-y-1"
+              className="bg-[#1C2541] border border-white/10 overflow-hidden shadow-xl flex flex-col justify-between group hover:border-[#10B981]/50 transition-all hover:-translate-y-0.5"
             >
               <div>
                 {/* Service Image */}
-                <div className="h-44 relative overflow-hidden">
+                <div className="h-32 relative overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -173,26 +170,26 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C2541] via-transparent to-transparent"></div>
-                  <span className="absolute bottom-3 left-3 px-3 py-1 bg-[#10B981] text-black text-xs font-black uppercase tracking-wider">
+                  <span className="absolute bottom-2 left-2 px-2 py-0.5 bg-[#10B981] text-black text-[10px] font-black uppercase tracking-wider">
                     0{index + 1}. {service.title}
                   </span>
                 </div>
 
                 {/* Service Info */}
-                <div className="p-5 space-y-3">
-                  <p className="text-gray-300 text-xs leading-relaxed">
+                <div className="p-3.5 space-y-2">
+                  <p className="text-gray-300 text-xs leading-snug line-clamp-2">
                     {service.shortDesc}
                   </p>
 
-                  <div className="space-y-1.5 pt-2 border-t border-white/10">
-                    <span className="text-[10px] font-black text-[#10B981] uppercase tracking-widest block">
+                  <div className="space-y-1 pt-1.5 border-t border-white/10">
+                    <span className="text-[9px] font-black text-[#10B981] uppercase tracking-widest block">
                       Typical Materials:
                     </span>
-                    <ul className="text-xs text-gray-300 space-y-1">
-                      {service.materials.map((mat, i) => (
-                        <li key={i} className="flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 bg-[#10B981]"></span>
-                          {mat}
+                    <ul className="text-[11px] text-gray-300 space-y-0.5">
+                      {service.materials.slice(0, 3).map((mat, i) => (
+                        <li key={i} className="flex items-center gap-1 truncate">
+                          <span className="w-1 h-1 bg-[#10B981] shrink-0"></span>
+                          <span className="truncate">{mat}</span>
                         </li>
                       ))}
                     </ul>
@@ -201,14 +198,14 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
               </div>
 
               {/* Service Footer CTA */}
-              <div className="p-5 pt-0">
+              <div className="p-3.5 pt-0">
                 <a
                   href={`tel:${COMPANY_INFO.phone.replace(/[^0-9]/g, '')}`}
-                  className="w-full py-2.5 bg-white/5 hover:bg-[#10B981] hover:text-black text-white font-black text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 border border-white/10"
+                  className="w-full py-2 bg-white/5 hover:bg-[#10B981] hover:text-black text-white font-black text-[11px] uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5 border border-white/10"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#10B981] group-hover:text-black" />
+                  <Phone className="w-3 h-3 text-[#10B981] group-hover:text-black" />
                   <span>Call to Request Rate</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#10B981] group-hover:text-black" />
+                  <ArrowRight className="w-3 h-3 text-[#10B981] group-hover:text-black" />
                 </a>
               </div>
 
@@ -218,23 +215,20 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
       </section>
 
       {/* WHY CHOOSE US SECTION */}
-      <section className="bg-[#070D1F] py-16 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section className="bg-[#070D1F] py-8 border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-[#10B981] font-black text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-[#10B981]" />
+          <div className="text-center max-w-3xl mx-auto space-y-1.5">
+            <span className="text-[#10B981] font-black text-[11px] uppercase tracking-[0.2em] flex items-center justify-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#10B981]" />
               THE HAULM TRANSPORT ADVANTAGE
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
               Why Contractors Trust Haulm Transport
             </h2>
-            <p className="text-gray-300 text-sm">
-              We combine modern heavy equipment, real-time dispatch technology, and safety-first drivers to keep your site on schedule and on budget.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
             {[
               {
                 title: 'Reliable Scheduling',
@@ -271,13 +265,13 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
               return (
                 <div
                   key={i}
-                  className="bg-[#1C2541] border border-white/10 p-6 space-y-3 hover:border-[#10B981]/40 transition-colors shadow-xl"
+                  className="bg-[#1C2541] border border-white/10 p-3.5 space-y-2 hover:border-[#10B981]/40 transition-colors shadow-lg"
                 >
-                  <div className="w-12 h-12 bg-[#10B981]/10 border border-[#10B981]/30 flex items-center justify-center text-[#10B981]">
-                    <IconComp className="w-6 h-6 text-[#10B981]" />
+                  <div className="w-9 h-9 bg-[#10B981]/10 border border-[#10B981]/30 flex items-center justify-center text-[#10B981]">
+                    <IconComp className="w-4 h-4 text-[#10B981]" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-tight">{feature.title}</h3>
-                  <p className="text-gray-300 text-xs leading-relaxed">{feature.desc}</p>
+                  <h3 className="text-sm font-black text-white uppercase tracking-tight">{feature.title}</h3>
+                  <p className="text-gray-300 text-xs leading-snug">{feature.desc}</p>
                 </div>
               );
             })}
@@ -287,38 +281,35 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
       </section>
 
       {/* FEATURED PROJECTS GALLERY */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
-          <div className="space-y-2">
-            <span className="text-[#10B981] font-black text-xs uppercase tracking-[0.2em] flex items-center gap-1.5">
-              <Building2 className="w-4 h-4 text-[#10B981]" />
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b border-white/10 pb-3">
+          <div className="space-y-1">
+            <span className="text-[#10B981] font-black text-[11px] uppercase tracking-[0.2em] flex items-center gap-1.5">
+              <Building2 className="w-3.5 h-3.5 text-[#10B981]" />
               NOVA SCOTIA PROJECT SHOWCASE
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
               Featured Infrastructure Projects
             </h2>
-            <p className="text-gray-300 text-sm max-w-2xl">
-              Proven performance on major highway expansions, waterfront commercial developments, and quarry aggregate shuttles across Nova Scotia.
-            </p>
           </div>
 
           <button
             onClick={() => setCurrentPage('fleet')}
-            className="px-5 py-2.5 bg-white/5 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-widest border border-white/10 flex items-center gap-2 shrink-0"
+            className="px-4 py-1.5 bg-white/5 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-widest border border-white/10 flex items-center gap-1.5 shrink-0"
           >
             <span>View Our Fleet</span>
-            <ChevronRight className="w-4 h-4 text-[#10B981]" />
+            <ChevronRight className="w-3.5 h-3.5 text-[#10B981]" />
           </button>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {PROJECTS.map((project) => (
             <div
               key={project.id}
-              className="bg-[#1C2541] border border-white/10 overflow-hidden shadow-2xl group hover:border-[#10B981]/50 transition-colors flex flex-col justify-between"
+              className="bg-[#1C2541] border border-white/10 overflow-hidden shadow-xl group hover:border-[#10B981]/50 transition-colors flex flex-col justify-between"
             >
-              <div className="h-60 relative overflow-hidden">
+              <div className="h-40 relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -327,32 +318,32 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1C2541] via-[#1C2541]/40 to-transparent"></div>
                 
-                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                <div className="absolute bottom-2.5 left-3 right-3 flex justify-between items-end">
                   <div>
-                    <span className="px-2.5 py-1 bg-[#10B981] text-black text-[11px] font-black uppercase tracking-wider mb-2 inline-block">
+                    <span className="px-2 py-0.5 bg-[#10B981] text-black text-[10px] font-black uppercase tracking-wider mb-1 inline-block">
                       {project.category}
                     </span>
-                    <h3 className="text-xl font-black text-white uppercase tracking-tight drop-shadow-md">
+                    <h3 className="text-base font-black text-white uppercase tracking-tight drop-shadow-md">
                       {project.title}
                     </h3>
                   </div>
-                  <span className="text-xs font-mono font-bold text-[#10B981] bg-[#070D1F] px-2.5 py-1 border border-white/10">
+                  <span className="text-[10px] font-mono font-bold text-[#10B981] bg-[#070D1F] px-2 py-0.5 border border-white/10">
                     {project.year}
                   </span>
                 </div>
               </div>
 
-              <div className="p-6 space-y-4">
-                <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+              <div className="p-3.5 space-y-2">
+                <p className="text-gray-300 text-xs leading-snug">
                   {project.description}
                 </p>
 
-                <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
+                <div className="pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
                   <span className="text-gray-300 flex items-center gap-1 font-semibold uppercase">
-                    <MapPin className="w-3.5 h-3.5 text-[#10B981]" />
+                    <MapPin className="w-3 h-3 text-[#10B981]" />
                     {project.location}
                   </span>
-                  <span className="font-mono font-bold text-[#10B981] bg-[#10B981]/10 px-2.5 py-1 border border-[#10B981]/20">
+                  <span className="font-mono font-bold text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 border border-[#10B981]/20">
                     {project.stats}
                   </span>
                 </div>
@@ -369,35 +360,35 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage, openQuoteModal }) =>
 
       {/* CALL TO ACTION BANNER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#1C2541] border border-white/10 p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#1C2541] border border-white/10 p-5 sm:p-6 text-white shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#10B981]/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="space-y-3 text-center md:text-left max-w-2xl relative z-10">
-            <span className="inline-block px-3 py-1 bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 font-black text-xs uppercase tracking-widest">
-              24/7 DISPATCH ACTIVE
+          <div className="space-y-1.5 text-center md:text-left max-w-2xl relative z-10">
+            <span className="inline-block px-2.5 py-0.5 bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 font-black text-[10px] uppercase tracking-widest">
+              24Hr DISPATCH ACTIVE
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight leading-tight">
+            <h2 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight leading-tight">
               Need Material Delivered or Removed?
             </h2>
-            <p className="text-gray-300 text-sm sm:text-base font-normal">
+            <p className="text-gray-300 text-xs sm:text-sm font-normal">
               Get an accurate quote for aggregate hauling, topsoil delivery, or demolition debris removal today. Experienced drivers and modern fleet ready to mobilize.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full md:w-auto relative z-10">
+          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full md:w-auto relative z-10">
             <a
               href={`tel:${COMPANY_INFO.phone.replace(/[^0-9]/g, '')}`}
-              className="w-full sm:w-auto px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-black font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10B981]/25 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-5 py-2.5 bg-[#10B981] hover:bg-[#059669] text-black font-black text-xs uppercase tracking-widest shadow-lg shadow-[#10B981]/25 transition-all flex items-center justify-center gap-2"
             >
-              <Phone className="w-5 h-5 text-black" />
-              <span>Call to Request a Quote Today</span>
+              <Phone className="w-4 h-4 text-black" />
+              <span>Call to Request Quote</span>
             </a>
 
             <a
               href={`tel:${COMPANY_INFO.phone.replace(/[^0-9]/g, '')}`}
-              className="w-full sm:w-auto px-6 py-4 bg-white/10 hover:bg-white/20 text-white font-black text-xs uppercase tracking-widest text-center flex items-center justify-center gap-2 border border-white/20"
+              className="w-full sm:w-auto px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white font-black text-xs uppercase tracking-widest text-center flex items-center justify-center gap-2 border border-white/20"
             >
-              <Phone className="w-5 h-5 text-[#10B981]" />
+              <Phone className="w-4 h-4 text-[#10B981]" />
               <span>Call Dispatch</span>
             </a>
           </div>

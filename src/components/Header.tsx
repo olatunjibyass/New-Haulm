@@ -5,11 +5,9 @@ import {
   Menu, 
   X, 
   FileText, 
-  Eye, 
   ChevronRight,
   ShieldCheck,
-  Calculator,
-  Search
+  Calculator
 } from 'lucide-react';
 import { PageType } from '../types';
 import { COMPANY_INFO } from '../data/mockData';
@@ -18,10 +16,10 @@ interface HeaderProps {
   currentPage: PageType;
   setCurrentPage: (page: PageType) => void;
   openQuoteModal: () => void;
-  accessibilityMode: { highContrast: boolean; largeText: boolean };
-  toggleHighContrast: () => void;
-  toggleLargeText: () => void;
-  openSeoPanel: () => void;
+  accessibilityMode?: { highContrast: boolean; largeText: boolean };
+  toggleHighContrast?: () => void;
+  toggleLargeText?: () => void;
+  openSeoPanel?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -53,68 +51,33 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-[#0B132B]/95 border-b border-white/10 shadow-2xl backdrop-blur-md">
-      {/* Top Utility Bar */}
-      <div className="bg-[#070D1F] border-b border-white/10 py-1.5 px-4 text-xs text-gray-400 hidden sm:block">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 text-gray-300">
+      {/* Top Continuous Rolling Banner */}
+      <div className="bg-[#070D1F] border-b border-white/10 py-1.5 overflow-hidden text-xs text-gray-300 font-medium select-none">
+        <div className="animate-marquee whitespace-nowrap flex items-center gap-12">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div key={i} className="flex items-center gap-3 shrink-0">
               <span className="w-2 h-2 rounded-full bg-[#10B981] animate-ping"></span>
-              Nova Scotia Coverage: HRM, Dartmouth, Bedford, Sackville, Truro & Highway Corridors
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4">
-            {/* Accessibility Toggles */}
-            <button
-              onClick={toggleHighContrast}
-              className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-colors flex items-center gap-1 ${
-                accessibilityMode.highContrast
-                  ? 'bg-[#10B981] text-black font-bold'
-                  : 'bg-white/10 text-gray-300 hover:bg-white/20'
-              }`}
-              title="Toggle High Contrast Mode"
-            >
-              <Eye className="w-3 h-3" />
-              Contrast
-            </button>
-
-            <button
-              onClick={toggleLargeText}
-              className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-colors ${
-                accessibilityMode.largeText
-                  ? 'bg-[#10B981] text-black font-bold'
-                  : 'bg-white/10 text-gray-300 hover:bg-white/20'
-              }`}
-              title="Toggle Larger Text Size"
-            >
-              Text A+
-            </button>
-
-            {/* SEO & Compliance Inspector */}
-            <button
-              onClick={openSeoPanel}
-              className="text-gray-400 hover:text-[#10B981] transition-colors flex items-center gap-1 text-[11px] underline underline-offset-2"
-            >
-              <Search className="w-3 h-3 text-[#10B981]" />
-              SEO & Schema
-            </button>
-          </div>
+              <span className="text-[#10B981] font-black uppercase tracking-wider text-[11px]">Nova Scotia Coverage:</span>
+              <span className="text-white font-bold tracking-wide">HRM, Dartmouth, Bedford, Sackville, Truro & Highway Corridors</span>
+              <span className="text-gray-500 font-mono text-[10px] ml-4">• 24Hr Heavy Transport Active</span>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 sm:h-28">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           
           {/* Logo provided by user */}
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 text-left group focus:outline-none focus:ring-2 focus:ring-[#10B981] rounded-lg p-1"
+            className="flex items-center gap-2 text-left group focus:outline-none focus:ring-2 focus:ring-[#10B981] rounded-lg p-0.5"
           >
             <img 
               src="https://i.imgur.com/0Cd1bj0.png" 
               alt="Haulm Transport Logo" 
-              className="h-16 sm:h-20 w-auto max-w-[280px] sm:max-w-[380px] object-contain group-hover:scale-105 transition-transform filter drop-shadow-md" 
+              className="h-9 sm:h-11 w-auto max-w-[220px] sm:max-w-[300px] object-contain group-hover:scale-105 transition-transform filter drop-shadow-md" 
             />
           </button>
 
