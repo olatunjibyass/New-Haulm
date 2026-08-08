@@ -1,6 +1,6 @@
 {
   "name": "Haulm Transport",
-  "description": "Dump Truck Hauling & Bulk Material Transportation Services in Ontario",
+  "description": "Dump Truck Hauling & Bulk Material Transportation Services in Nova Scotia",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
