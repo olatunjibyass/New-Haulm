@@ -3,9 +3,9 @@ import { Service, FleetItem, Project, Testimonial, Industry, MaterialDensity, Fa
 export const COMPANY_INFO = {
   name: 'Haulm Transport',
   tagline: 'Reliable Dump Truck Hauling Services for Construction & Infrastructure Projects Across Nova Scotia',
-  phone: '+1 (902) 201-5062',
-  localPhone: '(902) 201-5062',
-  dispatchPhone: '+1 (902) 201-5062',
+  phone: '+1 (416) 995-5689',
+  localPhone: '(416) 995-5689',
+  dispatchPhone: '+1 (416) 995-5689',
   email: 'haulmtransport@hotmail.com',
   quoteEmail: 'haulmtransport@hotmail.com',
   address: '71 Simmonds Rd, North Preston, NS B2Z 1A3',

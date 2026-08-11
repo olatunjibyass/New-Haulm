@@ -199,7 +199,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ openQuoteModal }) => {
                   <input
                     type="tel"
                     required
-                    placeholder="(902) 201-5062"
+                    placeholder="(416) 995-5689"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full bg-[#070D1F] border border-white/10 px-3 py-2 text-xs text-white focus:outline-none focus:border-[#10B981] font-medium"
